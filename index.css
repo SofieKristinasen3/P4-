@@ -1,5 +1,10 @@
 body{
-    background-color: black;}
+    background-color: black;
+}
+
+p{
+    color: aliceblue;
+}
 
 img{
     width: 10%;
@@ -18,5 +23,4 @@ header{
 footer{
 height: 50px;
 width: 100%;
-background-color: antiquewhite;
-}
+background-color: antiquewhite;}
