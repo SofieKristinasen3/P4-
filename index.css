@@ -1,6 +1,5 @@
 body{
-    background-color: black;
-}
+    background-color: black;}
 
 img{
     width: 10%;
@@ -8,4 +7,16 @@ img{
 
 h1{
     color: aliceblue;
+}
+
+header{
+    height: 50px;
+    width: 100%;
+    background-color: aliceblue;
+}
+
+footer{
+height: 50px;
+width: 100%;
+background-color: antiquewhite;
 }
