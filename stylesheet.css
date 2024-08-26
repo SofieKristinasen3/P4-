@@ -1,0 +1,12 @@
+:root{
+    --distance: 10%;
+}
+
+header{
+    margin: var(--distance);
+}
+
+header img{
+ height: 8%;
+ width: 8%;   
+}
