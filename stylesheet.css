@@ -1,12 +1,41 @@
 :root{
-    --distance: 10%;
+    --distance: 8%;
+    --smalldistance: 2%;
 }
 
+body{
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+}
+
+
 header{
-    margin: var(--distance);
+    margin: var(--smalldistance) var(--distance); 
+    display: flex;
+}
+
+header div {
+    padding: 0px var(--smalldistance);
 }
 
 header img{
  height: 8%;
  width: 8%;   
+ padding: 0px var(--smalldistance);
+}
+
+#search {
+    height: 8%;
+    width: 40%;
+    background-color: rgb(219, 219, 219);
+    color: rgb(54, 54, 54);
+    border-radius: 100px;
+    padding: 0px;
+    
+}
+
+#favorite img{
+height: 24px;
+width: 24px;
 }
