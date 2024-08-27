@@ -21,7 +21,7 @@ header div {
 }
 
 header img{
-    height: 8%;
+    height: auto;
     width: 8%;
     padding: 0px var(--smalldistance);
     margin: 20px;
