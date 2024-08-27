@@ -63,7 +63,30 @@
 
     </header>
 
-    <nav></nav>
+    <nav>
+      <ul id="sidebar"> <!--Navigation for mobile-->
+          <li onclick=hideSidebar()><a href="#"><img src="img/icons/close_24dp_616161_FILL0_wght400_GRAD0_opsz24.svg" class="menu-icons"></a></li>
+          <li><a href="#"><img src="img/icons/search_24dp_00000_FILL0_wght400_GRAD0_opsz24.svg" alt=""class="menu-icons"/></a></li>
+          <li><a href="#">Produkter</a></li>
+          <li><a href="#">Rum</a></li>
+          <li><a href="#">Nyheder</a></li>
+          <li><a href="#">Tilbud & særlige priser</a></li>
+          <li><a href="#">Tips & Idéer</a></li>
+          <li><a href="#">Design & planlægning</a></li>
+          <li><a href="#">Mere...</a></li>
+        </ul>
+
+      <ul> <!--Navigation for computer-->
+          <li class="hide-on-mobile"><a href="#">Produkter</a></li>
+          <li class="hide-on-mobile"><a href="#">Rum</a></li>
+          <li class="hide-on-mobile"><a href="#">Nyheder</a></li>
+          <li class="hide-on-mobile"><a href="#">Tilbud & særlige priser</a></li>
+          <li class="hide-on-mobile"><a href="#">Tips & Idéer</a></li>
+          <li class="hide-on-mobile"><a href="#">Design & planlægning</a></li>
+          <li class="hide-on-mobile"><a href="#">Mere...</a></li>
+          <li onclick=showSidebar()><a href="#"><img src="img/icons/menu_24dp_616161_FILL0_wght400_GRAD0_opsz24.svg" class="menu-icons" id="menu-but"></a></li>
+        </ul>
+      </nav>
 
     <div></div>
 
