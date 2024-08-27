@@ -11,7 +11,7 @@ body{
 
 .lightmode {
     background-color:#FAFAFA;
-    coor:#212121;
+    color:#212121;
 }
 
 .darkmode {
@@ -30,7 +30,6 @@ header div {
 }
 
 header img{
-    height: auto;
     width: 8%;
     padding: 0px var(--smalldistance);
     margin: 20px;
