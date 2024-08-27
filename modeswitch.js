@@ -22,3 +22,16 @@ document.getElementById("modeSwitch").addEventListener("click", function() {
 // Hvis currentIndex er 1, vil 'darkmode' blive tilføjet.
 });
 // Lukker functionen.
+
+
+//document.body = [lightmode]
+//modes = [lightmode, darkmode]
+//currentindex = 0
+
+//currentindex = 1
+//document.body = [] 
+
+
+//document.body.classList.remove(modes[currentIndex]);
+//currentIndex = (currentIndex + 1) % modes.length;
+//document.body.classList.add(modes[currentIndex]);
