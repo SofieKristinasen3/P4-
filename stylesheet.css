@@ -10,13 +10,13 @@ body{
 }
 
 .lightmode {
-    background-color:#FAFAFA;
-    coor:#212121;
+    background-color:#F5F5F5;
+    color:#212121;
 }
 
 .darkmode {
     background-color:#212121;
-    color:#FAFAFA;
+    color:#F5F5F5;
 }
 
 
@@ -30,7 +30,7 @@ header div {
 }
 
 header img{
-    height: auto;
+    height: 8%;
     width: 8%;
     padding: 0px var(--smalldistance);
     margin: 20px;
