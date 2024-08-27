@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="navigation.css"/>
     <script src="navigation.js" defer> </script>
   </head>
-  <body>
+  <body class="lightmode">
     <header>
       <img src="img/Ikea_logo.png" alt="IKEA" />
       <div id="search">
@@ -57,9 +57,12 @@
         />
       </div>
 
-      <div id="themeswitch">
-        <img src="img/icons/moon.svg" alt="" class="icons" />
-      </div>
+      <button id="modeSwitch" class="icons">
+        <img src="img/icons/moon.svg" alt="theme" />
+      </button>
+
+      <script src="modeswitch.js"></script>
+
     </header>
 
     <nav>
