@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IKEA TESTSIDE</title>
     <link rel="stylesheet" href="stylesheet.css" />
-    <script  src="navigation.js" defer></script>
+    <script src="navigation.js" defer></script>
+    <script src="typing.js" defer></script>
   </head>
+
   <body class="lightmode">
     <header>
       <img src="img/Ikea_logo.png" alt="IKEA" />
@@ -61,35 +63,64 @@
       </div>
 
       <script src="modeswitch.js"></script>
-
     </header>
 
     <nav>
-      <ul id="sidebar"> <!--Navigation for mobile-->
-          <li onclick=hideSidebar()><a href="#"><img src="img/icons/close_24dp_616161_FILL0_wght400_GRAD0_opsz24.svg" class="menu-icons"></a></li>
-          <li><a href="#"><img src="img/icons/search_24dp_00000_FILL0_wght400_GRAD0_opsz24.svg" alt=""class="menu-icons"/></a></li>
-          <li><a href="#">Produkter</a></li>
-          <li><a href="#">Rum</a></li>
-          <li><a href="#">Nyheder</a></li>
-          <li><a href="#">Tilbud & særlige priser</a></li>
-          <li><a href="#">Tips & Idéer</a></li>
-          <li><a href="#">Design & planlægning</a></li>
-          <li><a href="#">Mere...</a></li>
-        </ul>
+      <ul id="sidebar">
+        <!--Navigation for mobile-->
+        <li onclick="hideSidebar()">
+          <a href="#"
+            ><img
+              src="img/icons/close_24dp_616161_FILL0_wght400_GRAD0_opsz24.svg"
+              class="menu-icons"
+          /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img
+              src="img/icons/search_24dp_00000_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+              class="menu-icons"
+          /></a>
+        </li>
+        <li><a href="#">Produkter</a></li>
+        <li><a href="#">Rum</a></li>
+        <li><a href="#">Nyheder</a></li>
+        <li><a href="#">Tilbud & særlige priser</a></li>
+        <li><a href="#">Tips & Idéer</a></li>
+        <li><a href="#">Design & planlægning</a></li>
+        <li><a href="#">Mere...</a></li>
+      </ul>
 
-      <ul> <!--Navigation for computer-->
-          <li class="hide-on-mobile"><a href="#">Produkter</a></li>
-          <li class="hide-on-mobile"><a href="#">Rum</a></li>
-          <li class="hide-on-mobile"><a href="#">Nyheder</a></li>
-          <li class="hide-on-mobile"><a href="#">Tilbud & særlige priser</a></li>
-          <li class="hide-on-mobile"><a href="#">Tips & Idéer</a></li>
-          <li class="hide-on-mobile"><a href="#">Design & planlægning</a></li>
-          <li class="hide-on-mobile"><a href="#">Mere...</a></li>
-          <li onclick=showSidebar()><a href="#"><img src="img/icons/menu_24dp_616161_FILL0_wght400_GRAD0_opsz24.svg" class="menu-icons" id="menu-but"></a></li>
-        </ul>
-      </nav>
+      <ul>
+        <!--Navigation for computer-->
+        <li class="hide-on-mobile"><a href="#">Produkter</a></li>
+        <li class="hide-on-mobile"><a href="#">Rum</a></li>
+        <li class="hide-on-mobile"><a href="#">Nyheder</a></li>
+        <li class="hide-on-mobile"><a href="#">Tilbud & særlige priser</a></li>
+        <li class="hide-on-mobile"><a href="#">Tips & Idéer</a></li>
+        <li class="hide-on-mobile"><a href="#">Design & planlægning</a></li>
+        <li class="hide-on-mobile"><a href="#">Mere...</a></li>
+        <li onclick="showSidebar()">
+          <a href="#"
+            ><img
+              src="img/icons/menu_24dp_616161_FILL0_wght400_GRAD0_opsz24.svg"
+              class="menu-icons"
+              id="menu-but"
+          /></a>
+        </li>
+      </ul>
+    </nav>
 
-    <div></div>
+    <div id="hero">
+      <div id="typing">
+        <h1>
+          Mit hjem er
+          <span id="typewriter"></span>
+          <span id="cursor">|</span>
+        </h1>
+      </div>
+    </div>
 
     <footer></footer>
   </body>
