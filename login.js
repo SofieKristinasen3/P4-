@@ -9,7 +9,7 @@ let loginBtn = document.getElementById("loginBtn");
 let closeBtn = document.getElementsByClassName("close-btn")[0];
 let submitBtn = document.getElementById("submitBtn");
 let errorMsg = document.getElementById("error-msg");
-alert("hej")
+
 // tryk på knappen for at åbne login boksen
 loginBtn.onclick = function() {
     modal.style.display = "block";
