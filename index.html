@@ -12,22 +12,11 @@
   <body class="lightmode">
     <header>
       <div>
-        <img src="img/Ikea_logo.png" alt="IKEA" />
+        <img src="img/Ikea_logo.png" alt="IKEA" class="logo"/>
 
-        <div id="search" class="icons">
-          <img
-            src="img/icons/search_24dp_00000_FILL0_wght400_GRAD0_opsz24.svg"
-            alt=""
-          />
-          <p>Hvad er du på udkig efter?</p>
-        </div>
-
-        <div id="postalcode" class="icons">
-          <img
-            src="img/icons/local_shipping_24dp_00000_FILL0_wght400_GRAD0_opsz24.svg"
-            alt=""
-          />
-          <p>Indtast postnummer</p>
+        <div id="search">
+          <span id="search-content"><img src="img/icons/search_24dp_00000_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="icons">
+            <p>Hvad er du på udkig efter?</p></span>
         </div>
 
         <div id="warehouse">
@@ -36,8 +25,14 @@
             alt=""
             class="icons"
           />
-          <p>Vælg varehus</p>
+          <p >Vælg varehus</p>
         </div>
+
+          <div>
+            <img src="img/icons/local_shipping_24dp_00000_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="icons">
+            <p>Indtast Postnummer</p>
+          </div>
+
         <div id="loginBtn">
           <img
             src="img/icons/person_24dp_00000_FILL0_wght400_GRAD0_opsz24.svg"
@@ -147,6 +142,7 @@
           <span> <img src="img/havemoebler.png" alt="" /></span>
           <span> <img src="img/abe-bamse.png" alt="" /></span>
         </div>
+        <img src="img/icons/arrow_forward.svg" id="forwardBtn">
         <div>
           <span> <img src="img/vase.png" alt="" /></span>
           <span> <img src="img/badevaerelses-vask.png" alt="" /></span>
@@ -161,6 +157,32 @@
         <img src="img/icons/arrow_forward.svg" id="forwardBtn" />
       </div>
     </div>
+       
+      </div>
+      
+      <script> 
+        let scrollContainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let forwardBtn = document.getElementById("forwardBtn");
+
+        scrollContainer.addEventListener("wheel", (evt) => {
+        evt.preventDefault();
+        scrollContainer.scrollLeft += evt.deltaY;
+        scrollContainer.style.scrollBehavior = "auto";
+        });
+
+        forwardBtn.addEventListener("click", ()=>{
+          scrollContainer.style.scrollBehavior = "smooth";
+          scrollContainer.scrollLeft += 900;
+        });
+
+        backBtn.addEventListener("click", ()=>{
+          scrollContainer.style.scrollBehavior = "smooth";
+          scrollContainer.scrollLeft -= 900;
+        });
+      </script>
+      </div>
+
 
     <div id="hero">
       <div id="typing">
