@@ -11,59 +11,61 @@
 
   <body class="lightmode">
     <header>
-      <img src="img/Ikea_logo.png" alt="IKEA" />
-      <div id="search">
-        <img
-          src="img/icons/search_24dp_00000_FILL0_wght400_GRAD0_opsz24.svg"
-          alt=""
-          class="icons"
-        />
-        <p>Hvad er du på udkig efter?</p>
-      </div>
-      <div id="postalcode">
-        <img
-          src="img/icons/local_shipping_24dp_00000_FILL0_wght400_GRAD0_opsz24.svg"
-          alt=""
-          class="icons"
-        />
-        <p>Indtast postnummer</p>
-      </div>
+      <div>
+        <img src="img/Ikea_logo.png" alt="IKEA" />
 
-      <div id="warehouse">
-        <img
-          src="img/icons/store_24dp_00000_FILL0_wght400_GRAD0_opsz24.svg"
-          alt=""
-          class="icons"
-        />
-        <p>Vælg varehus</p>
-      </div>
-      <div id="loginBtn">
-        <img
-          src="img/icons/person_24dp_00000_FILL0_wght400_GRAD0_opsz24.svg"
-          alt="theme"
-          class="icons"
-        />
-        <p>Log ind</p>
-      </div>
-      <script src="login.js" defer></script>
+        <div id="search" class="icons">
+          <img
+            src="img/icons/search_24dp_00000_FILL0_wght400_GRAD0_opsz24.svg"
+            alt=""
+          />
+          <p>Hvad er du på udkig efter?</p>
+        </div>
 
-      <div id="favorite">
-        <img src="img/icons/hjerte.svg" alt="" class="icons" />
-      </div>
+        <div id="postalcode" class="icons">
+          <img
+            src="img/icons/local_shipping_24dp_00000_FILL0_wght400_GRAD0_opsz24.svg"
+            alt=""
+          />
+          <p>Indtast postnummer</p>
+        </div>
 
-      <div id="basket">
-        <img
-          src="img/icons/shopping_basket_24dp_00000_FILL0_wght400_GRAD0_opsz24.svg"
-          alt=""
-          class="icons"
-        />
-      </div>
+        <div id="warehouse">
+          <img
+            src="img/icons/store_24dp_00000_FILL0_wght400_GRAD0_opsz24.svg"
+            alt=""
+            class="icons"
+          />
+          <p>Vælg varehus</p>
+        </div>
+        <div id="loginBtn">
+          <img
+            src="img/icons/person_24dp_00000_FILL0_wght400_GRAD0_opsz24.svg"
+            alt="theme"
+            class="icons"
+          />
+          <p>Log ind</p>
+        </div>
+        <script src="login.js" defer></script>
 
-      <div id="modeSwitch">
-        <img src="img/icons/moon.svg" alt="theme" class="icons" />
-      </div>
+        <div id="favorite">
+          <img src="img/icons/hjerte.svg" alt="" class="icons" />
+        </div>
 
-      <script src="modeswitch.js"></script>
+        <div id="basket">
+          <img
+            src="img/icons/shopping_basket_24dp_00000_FILL0_wght400_GRAD0_opsz24.svg"
+            alt=""
+            class="icons"
+          />
+        </div>
+
+        <div id="modeSwitch">
+          <img src="img/icons/moon.svg" alt="theme" class="icons" />
+        </div>
+
+        <script src="modeswitch.js"></script>
+      </div>
     </header>
 
     <nav>
@@ -116,45 +118,49 @@
     <!--log ind-->
     <div id="loginModal" class="modal">
       <div class="modal-content">
-          <span class="close-btn">&times;</span>
-          <p>Log ind</p>
-          <input type="text" id="username" placeholder="Brugernavn" required>
-          <input type="password" id="password" placeholder="Adgangskode" required>
-          <button class="login-button" id="submitBtn">Log ind</button>
-          <p id="error-msg" style="color: red; display:none;">Forkert brugernavn eller adgangskode</p>
+        <span class="close-btn">&times;</span>
+        <p>Log ind</p>
+        <input type="text" id="username" placeholder="Brugernavn" required />
+        <input
+          type="password"
+          id="password"
+          placeholder="Adgangskode"
+          required
+        />
+        <button class="login-button" id="submitBtn">Log ind</button>
+        <p id="error-msg" style="color: red; display: none">
+          Forkert brugernavn eller adgangskode
+        </p>
       </div>
-  </div>
+    </div>
     <div class="gallery-wrap">
-      <img src="img/icons/arrow_back.svg" id="backBtn">
+      <img src="img/icons/arrow_back.svg" id="backBtn" />
       <div class="gallery">
         <div>
-          <span> <img src="img/kollektioner.png" alt=""></span>
-          <span> <img src="img/seng-og-madras.png" alt=""></span>
-          <span> <img src="img/tekstiler.png" alt=""></span>
-          <span> <img src="img/billedrammer.png" alt=""></span>
-          <span> <img src="img/sofa.png" alt=""></span>
-          <span> <img src="img/skab.png" alt=""></span>
-          <span> <img src="img/koekken.png" alt=""></span>
-          <span> <img src="img/havemoebler.png" alt=""></span>
-          <span> <img src="img/abe-bamse.png" alt=""></span>
+          <span> <img src="img/kollektioner.png" alt="" /></span>
+          <span> <img src="img/seng-og-madras.png" alt="" /></span>
+          <span> <img src="img/tekstiler.png" alt="" /></span>
+          <span> <img src="img/billedrammer.png" alt="" /></span>
+          <span> <img src="img/sofa.png" alt="" /></span>
+          <span> <img src="img/skab.png" alt="" /></span>
+          <span> <img src="img/koekken.png" alt="" /></span>
+          <span> <img src="img/havemoebler.png" alt="" /></span>
+          <span> <img src="img/abe-bamse.png" alt="" /></span>
         </div>
         <div>
-          <span> <img src="img/vase.png" alt=""></span>
-          <span> <img src="img/badevaerelses-vask.png" alt=""></span>
-          <span> <img src="img/koekkenting.png" alt=""></span>
-          <span> <img src="img/potter-og-planter.png" alt=""></span>
-          <span> <img src="img/belysning.png" alt=""></span>
-          <span> <img src="img/smart-home.png" alt=""></span>
-          <span> <img src="img/taepper.png" alt=""></span>
-          <span> <img src="img/elektronik.png" alt=""></span>
-          <span> <img src="img/vasketoej.png" alt=""></span>
+          <span> <img src="img/vase.png" alt="" /></span>
+          <span> <img src="img/badevaerelses-vask.png" alt="" /></span>
+          <span> <img src="img/koekkenting.png" alt="" /></span>
+          <span> <img src="img/potter-og-planter.png" alt="" /></span>
+          <span> <img src="img/belysning.png" alt="" /></span>
+          <span> <img src="img/smart-home.png" alt="" /></span>
+          <span> <img src="img/taepper.png" alt="" /></span>
+          <span> <img src="img/elektronik.png" alt="" /></span>
+          <span> <img src="img/vasketoej.png" alt="" /></span>
         </div>
-      <img src="img/icons/arrow_forward.svg" id="forwardBtn">
-      
+        <img src="img/icons/arrow_forward.svg" id="forwardBtn" />
       </div>
-      
-      </div>
-
+    </div>
 
     <div id="hero">
       <div id="typing">
@@ -165,9 +171,6 @@
         </h1>
       </div>
     </div>
-
-
-
 
     <footer></footer>
   </body>
