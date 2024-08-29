@@ -124,6 +124,7 @@
           <p id="error-msg" style="color: red; display:none;">Forkert brugernavn eller adgangskode</p>
       </div>
   </div>
+
     <div class="gallery-wrap">
       <img src="img/icons/arrow_back.svg" id="backBtn">
       <div class="gallery">
@@ -138,6 +139,7 @@
           <span> <img src="img/havemoebler.png" alt=""></span>
           <span> <img src="img/abe-bamse.png" alt=""></span>
         </div>
+        <img src="img/icons/arrow_forward.svg" id="forwardBtn">
         <div>
           <span> <img src="img/vase.png" alt=""></span>
           <span> <img src="img/badevaerelses-vask.png" alt=""></span>
@@ -149,10 +151,30 @@
           <span> <img src="img/elektronik.png" alt=""></span>
           <span> <img src="img/vasketoej.png" alt=""></span>
         </div>
-      <img src="img/icons/arrow_forward.svg" id="forwardBtn">
-      
+       
       </div>
       
+      <script> 
+        let scrollContainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let forwardBtn = document.getElementById("forwardBtn");
+
+        scrollContainer.addEventListener("wheel", (evt) => {
+        evt.preventDefault();
+        scrollContainer.scrollLeft += evt.deltaY;
+        scrollContainer.style.scrollBehavior = "auto";
+        });
+
+        forwardBtn.addEventListener("click", ()=>{
+          scrollContainer.style.scrollBehavior = "smooth";
+          scrollContainer.scrollLeft += 900;
+        });
+
+        backBtn.addEventListener("click", ()=>{
+          scrollContainer.style.scrollBehavior = "smooth";
+          scrollContainer.scrollLeft -= 900;
+        });
+      </script>
       </div>
 
 
