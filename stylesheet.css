@@ -233,7 +233,7 @@ nav a:hover{
 
 
 #hero {
-    background-image: url(img/hero/ikeahero2.jpg);
+    background-image: url(img/ikeahero2.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -276,7 +276,7 @@ nav a:hover{
 
   @media only screen and (max-width: 800px) {
     #hero {
-      background-image: url(img/hero/heromobil.jpg);
+      background-image: url(img/heromobil.jpg);
     }
   }
 
